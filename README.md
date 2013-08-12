@@ -7,7 +7,7 @@ Licensing
 =========
 
 These are snippets... In case you missed it, that means they all have their own licenses. For portability, this means that
-each file has its license included at the bottom of the file.
+each file has its license included at the bottom or top of the file.
 
 Graduation
 ==========
