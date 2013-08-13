@@ -15,3 +15,9 @@ Graduation
 Should a snippet `advance sufficiently | become interesting enough to me | gain a larger interest from others` I will
 remove it from the repository and give it a repository of its own in order to allow for larger and separate development
 to occur.
+
+Dependencies
+============
+
+Other than a gcc-compatible C compiler (ie: gcc, clang, etc.), nothing really. Use `make` to build
+(your files will appear in build/ and the readme will appear), and use `make clean` to clean up.
