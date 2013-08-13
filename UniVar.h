@@ -1,7 +1,7 @@
 #ifndef UNIVERSALVAR
 #define UNIVERSALVAR
 
-#ifdef __amd64__ || __x86_64__
+#if defined(__amd64__) || defined(__x86_64__)
 
 union universalvar8 {
 	unsigned char u;
@@ -32,18 +32,18 @@ union universalvar {
 	unsigned short int us[8];
 	int i[4];
 	unsigned int u[4];
-	float f[4]
+	float f[4];
 	long int l[2];
 	unsigned long int ul[2];
 	double d[2];
 	long double n;
 };
 
-typedef universalvar8	universal8;
-typedef universalvar16	universal16;
-typedef universalvar32	universal32;
-typedef universalvar64	universal64;
-typedef universalvar	universal;
+typedef union universalvar8	universal8;
+typedef union universalvar16	universal16;
+typedef union universalvar32	universal32;
+typedef union universalvar64	universal64;
+typedef union universalvar	universal;
 
 #endif
 
