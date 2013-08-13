@@ -24,7 +24,7 @@
 
 //#define LIMIT 42949672946
 //#define LIMIT 16777216
-//#define LIMIT 65536
+#define LIMIT 65536 //Choose another if you'd like
 
 // Preferably use consecutive primes for first three and size for last
 #define CONSEC_PRIME_ONE 19 // Largest coprime value; default = 19
