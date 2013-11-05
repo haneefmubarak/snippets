@@ -32,8 +32,10 @@ said, I feel that it is only fair that you are recognized for your work, so any 
 logfile named after your username in a contributors folder (don't do this, I will). Should any snippet(s) 
 containing your contributions graduate, I'll copy the relevant logs to the new project/repo.
 
-In terms of commit style, commit one set of self-relevant changes to one file at a time, unless doing so will 
+~~In terms of commit style, commit one set of self-relevant changes to one file at a time, unless doing so will 
 break something. Write a commit message along the lines of "blah blah blah in file x" (the "in file x" part is 
 mandatory). If you must (as outlined above) commit multiple files, write the names of the files (with spaces 
 for separators) in the summary, and write a commit message as outlined above in the extended description 
-(leave an empty line between each file's message).
+(leave an empty line between each file's message).~~
+
+**Have a look at haneefmubarak/sfDB2 for a good idea of what to do.**
