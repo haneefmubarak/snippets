@@ -4,7 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-static inline char *astrcat (unsigned char n, ...) {
+char *astrcat (unsigned char n, ...);
+inline char *astrcat (unsigned char n, ...) {
 	va_list args;
 	va_start (args, n);
 	char *r = vastrcat (n, args);
@@ -15,7 +16,9 @@ static inline char *astrcat (unsigned char n, ...) {
 
 char *vastrcat	(unsigned char n, va_list args);
 
-static inline char *aastrcat (unsigned short n,
+char *aastrcat (unsigned short n,
+		const char *restrict *restrict s);
+inline char *aastrcat (unsigned short n,
 			const char *restrict *restrict s) {
 	size_t l[n];
 	size_t x, len = 0;
@@ -24,8 +27,9 @@ static inline char *aastrcat (unsigned short n,
 		len += l[x];
 	}
 }
-
-static inline char *_astrcat (const size_t n, const size_t *restrict l,
+char *_astrcat (const size_t n, const size_t *restrict l,
+		const char *restrict *restrict s);
+inline char *_astrcat (const size_t n, const size_t *restrict l,
 			const char *restrict *restrict s) {
 	size_t x, len = 0;
 	for (x = 0; x < n; x++)
